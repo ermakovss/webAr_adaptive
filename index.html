@@ -14,6 +14,15 @@
 			<div class="model_object">
 				<div class="model_title">Огнетушитель порошковый ОП-4</div>
 					<model-viewer camera-controls autoplay ar shadow-intensity="1" animation-name="Op4-animation-2.glb" src="Op4-animation-2.glb" alt="A 3D model of an astronaut" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls>
+					<script>
+						(() => {
+ 						 const modelViewer = document.querySelector('#xfade-demo');
+
+  						 self.setInterval(() => {
+    							modelViewer.animationName = modelViewer.animationName === "Op4-animation-2.glb";
+  							}, 1500.0);
+})();
+</script>
 					</model-viewer>
 			</div>
 			<div class="model_info">
