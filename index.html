@@ -17,6 +17,7 @@
 					<script>
 						(() => {
  						 const modelViewer = document.querySelector('#xfade-demo');
+						 console.log(modelViewer.getCameraTarget());
 
   						 self.setInterval(() => {
     							modelViewer.animationName = modelViewer.animationName === 'Op4-animation-2.glb';
