@@ -14,7 +14,20 @@
 			<div class="model_object">
 				<div class="model_title">Огнетушитель порошковый ОП-4</div>
 					<model-viewer src="OP-4_animation--scale.glb" camera-controls ios-src="OP-4_animation--scaleUS.usdz" ar ar-modes="scene-viewer webxr quick-look" autoplay animation-name="PlaneAction.004">
-						</model-viewer>
+						
+					<script>
+						(() => {
+  							const modelViewer = document.querySelector('#xfade-demo');
+								
+							if(modelViewer.animationName === 'bodyAction.001'){console.log("EEEEE")};
+ 							 self.setInterval(() => {
+   								 modelViewer.animationName = modelViewer.animationName === 'Running' ?
+						      		'Idle' : 'Running';
+						  	}, 1500.0);
+						})();
+</script>	
+						
+					</model-viewer>
 			</div>
 			<div class="model_info">
 				<div class="model_specific">Используется для тушения пожаров всех категорий — А, В, С, Е: дерево, ткань, резиновые элементы, горячие жидкости/газы, электрооборудование (до 1000 В), жиры и масла</div>
