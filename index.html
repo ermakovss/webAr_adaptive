@@ -18,7 +18,7 @@
 					<script>
 					(() => {
 					  const modelViewer = document.querySelector('#xfade-demo');
-						if(modelViewer.animationName === 'PlaneAction.004'){console.log("eeee")};
+						if(modelViewer.animationName === 'bodyAction'){modelViewer.pause()};
 
 					  self.setInterval(() => {
 					    modelViewer.animationName = modelViewer.animationName === 'Running' ?
