@@ -21,7 +21,7 @@
 						if(modelViewer.animationName == 'PlaneAction.004'){alert("1")};
 						if(modelViewer.animationName == 'HeaderAction.001'){alert("2")};
 						if(modelViewer.animationName == 'bodyAction.001'){alert("3")};
-						
+						alert(self.animationName);
 						self.setInterval(() => {
 						    modelViewer.animationName = modelViewer.animationName === 'PlaneAction.004' ?
 						      'HeaderAction.001' : 'bodyAction.001';
