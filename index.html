@@ -19,11 +19,11 @@
 					(() => {
 					  const modelViewer = document.querySelector('#xfade-demo');
 						if(modelViewer.animationName === 'bodyAction'){modelViewer.pause()};
-						alert(modelViewer.animationName);
 					  self.setInterval(() => {
 					    modelViewer.animationName = modelViewer.animationName === 'PlaneAction.004' ?
 					      'HeaderAction.001' : 'PlaneAction.004';
 					  }, 1500.0);
+												alert(modelViewer.animationName);
 					})();
 					</script>
 						
