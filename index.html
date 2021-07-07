@@ -26,6 +26,7 @@
 						    modelViewer.animationName = modelViewer.animationName === 'PlaneAction.004' ?
 						      'HeaderAction.001' : 'bodyAction.001';
 							alert(modelViewer.animationName );
+							if(modelViewer.animationName == bodyAction.001) { modelViewer.pause() }
 						  }, 5500.0);
 					})();
 					</script>
