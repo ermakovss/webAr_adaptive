@@ -16,14 +16,16 @@
 					<model-viewer id="xfade-demo" src="OP-4_animation--scale.glb" camera-controls ios-src="OP-4_animation--scaleUS.usdz" ar ar-modes="scene-viewer webxr quick-look" autoplay animation-name="PlaneAction.004">
 						
 					<script>
-						(() => {
-  							const modelViewer = document.querySelector('#xfade-demo');
-								
-							if(modelViewer.animationName === 'bodyAction.001'){console.log("EEEEE")};
-							console.log(modelViewer.currentTime());
- 							 
-						})();
-</script>	
+					(() => {
+					  const modelViewer = document.querySelector('#xfade-demo');
+						if(modelViewer.animationName === 'PlaneAction.004'){console.log("eeee")};
+
+					  self.setInterval(() => {
+					    modelViewer.animationName = modelViewer.animationName === 'Running' ?
+					      'Idle' : 'Running';
+					  }, 1500.0);
+					})();
+					</script>
 						
 					</model-viewer>
 			</div>
